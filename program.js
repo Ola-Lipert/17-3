@@ -8,6 +8,7 @@ process.stdin.on('readable', function() {//nasłuchiwanie na zdarzenie odczytu
         switch (instruction) {//switch statement  zamiast if, if else
             case '/exit':
                 process.stdout.write('Quitting app!\n');// standard output służący do wypisywania komunikatów z procesu
+                process.exit();
                 break;
             
             
